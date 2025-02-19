@@ -1,0 +1,124 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+.contact-us {
+  /* background-image: url("https://www.zmo.ai/wp-content/uploads/2023/09/textured-dark-vignette-black-background.jpg"); Replace with your background image URL */
+  /* background-size: cover; */
+  background-color: rgb(57, 56, 56);
+  color: #fff;
+  padding: 37px 20px;
+  /* text-align: center; */
+}
+
+.contact-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.contact-us .description {
+  max-width: 91.5%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Blur effect for frosted glass */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for better visibility */
+  margin-right: 42px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-top: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.icon-container {
+  background: #fff;
+  color: #4ac5e8;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  /* margin-top: -30px; */
+}
+
+.contact-item h3 {
+  color: #4ac5e8;
+  /* margin-top: 40px; */
+}
+.text {
+  margin-top: 10px;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(145, 125, 125, 0.2);
+  height: fit-content;
+  margin-top: 10px;
+}
+.contact-f {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-left: 0px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #4ac5e8;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #369bb5;
+}

@@ -1,0 +1,360 @@
+.main-content {
+  height: 100%;
+  width: 100%;
+  margin-top: -22px;
+  /* border: 1px solid black; */
+}
+.c_profile-button {
+  background-color: rgb(0, 208, 194);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+.hbx {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  margin-left: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.cc {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+  border-radius: 10px;
+  /* border: 2px solid wheat; */
+  width: 100%;
+}
+
+.c_table {
+  display: flex;
+  flex-direction: column;
+}
+
+.c_table-container {
+  width: fit-content;
+  height: 360px;
+  overflow-y: auto;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.c_table-container::-webkit-scrollbar {
+  display: none;
+}
+
+.c_user-table {
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+.c_user-table th {
+  background-color: rgb(0, 208, 194);
+  color: white;
+  padding: 8px 10px; /* Padding adjusted for left alignment */
+  text-align: left; /* Aligns text to the left */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid #e0e0e0; /* Optional for a clean look */
+}
+
+.c_user-table td {
+  padding: 4px 10px;
+}
+
+.c_user-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.c_user-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.c_user-table a {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: rgba(0, 208, 194, 0.9);
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+.c_user-table a:hover {
+  background-color: rgb(65, 179, 158);
+  color: white;
+}
+
+.c_contestant-info {
+  display: flex;
+  align-items: center;
+}
+
+.c_contestant-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.c_contestant-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+/* ====================================================== */
+
+circles .circles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #00d0c2;
+  width: 189px;
+  height: 189px;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+
+.circle {
+  width: 170px;
+  height: 170px;
+  background: conic-gradient(
+    #00d0c2 calc(var(--percentage) * 1%),
+    rgba(0, 208, 194, 0.3) 0
+  );
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voted {
+  position: absolute;
+  top: 30px;
+  color: white;
+  font-size: 12px;
+}
+
+.votedNum {
+  position: absolute;
+  top: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+
+  background: rgba(255, 255, 255, 0.15); /* Softer transparency */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.1)
+  ); /* Subtle gradient */
+  backdrop-filter: blur(20px) saturate(200%); /* Increased blur and saturation */
+  padding: 20px; /* More spacious padding */
+  border-radius: 10px; /* Smoother rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+  width: auto;
+  height: auto;
+  max-width: 600px; /* Slightly wider max width */
+  max-height: 80vh; /* Adjusted for better viewport fit */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Crisp, translucent border */
+  border-top: 1px solid rgba(255, 255, 255, 0.6); /* Slightly stronger top border for contrast */
+  overflow-y: auto; /* Vertical scrolling only */
+  overflow-x: hidden; /* Hide horizontal overflow */
+  padding-top: 0px;
+}
+.anotherpopup-content {
+  background: rgba(255, 255, 255, 0.15); /* Softer transparency */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.1)
+  ); /* Subtle gradient */
+  backdrop-filter: blur(20px) saturate(200%); /* Increased blur and saturation */
+  padding: 0px; /* Reduced padding for a compact design */
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+  width: 400px;
+  height: 340px;
+  max-width: 400px; /* Constrained to 300px width */
+  max-height: 400px; /* Constrained to 300px height */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Crisp, translucent border */
+  border-top: 1px solid rgba(255, 255, 255, 0.6); /* Slightly stronger top border for contrast */
+  overflow-y: auto; /* Vertical scrolling only */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.vcard-container {
+  margin-bottom: 20px;
+}
+
+.vtop-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.vprofile-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-top: 0px;
+}
+
+.vname {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-left: -20px;
+  margin-top: -5px;
+}
+
+.vlogo {
+  margin-top: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.vinfo-container {
+  margin-top: 50px;
+}
+
+.vrow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.vlabel {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.vinfo {
+  /* border: 1px solid black; */
+  width: 15rem;
+}
+
+/* Contestant Info */
+.contestant-info {
+  display: flex;
+  align-items: center;
+}
+
+.contestant-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.contestant-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nv {
+  /* border: 2px solid black; */
+  margin-left: 12px;
+  width: 959px;
+  margin-top: 5px;
+}
+
+/* from here */
+
+.three-dot-icon {
+  margin-right: 5px;
+  cursor: pointer;
+  color: #555; /* Adjust color as per your design */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 4px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f0f0f0;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.popup-content button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-content button:first-child {
+  background-color: #007bff;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.popup-content button:last-child {
+  background-color: #f0f0f0;
+}

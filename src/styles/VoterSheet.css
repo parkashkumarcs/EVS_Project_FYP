@@ -1,0 +1,266 @@
+.Vbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.LabelLogoo {
+  margin-top: 0px;
+  margin-left: -138px;
+  font-size: 20px;
+  font-weight: 700px;
+  margin-bottom: 3px;
+}
+
+.File {
+  margin-top: -3px;
+  width: 315px;
+  border-radius: 0px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  margin-left: 0rem;
+  height: 50px;
+  /* background-color: rgb(176, 174, 174); */
+  color: rgb(5, 6, 6);
+}
+
+.btn-prev {
+  border: none;
+  font-size: 24px;
+  color: white;
+  border-radius: 5px;
+  margin-top: -20.4rem;
+  /* margin-left: 0rem; */
+  width: 120px;
+  height: 35px;
+  background-color: rgba(0, 105, 254, 0.9);
+}
+
+.btn-prev:hover {
+  background-color: rgb(128, 0, 0);
+  transition: 0.5s;
+}
+
+.load {
+  /* position: relative; */
+  border: none;
+  width: 85px;
+  height: 30px;
+  color: white;
+  font-size: 16px;
+  border-radius: 2px;
+  margin-left: -34.1rem;
+  margin-right: 2rem;
+}
+
+.load:hover {
+  background-color: rgb(128, 0, 0);
+}
+
+.vmain-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -22px;
+  /* border: 1px solid black; */
+}
+
+.mainCo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: 300px;
+  margin: 52px 0 0 30px;
+  border-radius: 12px; /* Smoother rounded corners */
+  backdrop-filter: blur(8px); /* Frosted glass effect */
+  background: rgba(255, 255, 255, 0.2);
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for elevation */
+  color: #fff; /* White text for readability */
+  padding: 10px;
+}
+
+.mn {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+  border-radius: 10px;
+  gap: 1rem;
+  /* border: 2px solid wheat; */
+  width: fit-content;
+}
+
+.user-table {
+  width: 100%;
+}
+
+.tableee {
+  margin-top: 50px;
+  width: 33.5rem;
+  height: 303px;
+  border-radius: 10px;
+  backdrop-filter: blur(12px) brightness(1.1); /* Frosted glass effect with enhanced brightness */
+  -webkit-backdrop-filter: blur(12px) brightness(1.1); /* For Safari support */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.25
+  ); /* Adjust opacity for more transparency */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Glass-like border */
+  color: #2c2c2c; /* Slightly darker text for contrast */
+  padding: 10px; /* More padding for better spacing */
+  font-family: "Arial", sans-serif; /* Clean and modern font */
+  display: flex;
+  flex-direction: column; /* Suitable for inner elements arrangement */
+  align-items: center; /* Center alignment */
+  justify-content: center; /* Center content vertically */
+}
+
+.Est {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 700px;
+  margin-bottom: 2px;
+  /* background-color: rgba(45, 195, 170, 0.42); */
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.table-Co {
+  margin-top: 0px;
+  margin-left: 0rem;
+  margin-right: 5px;
+  overflow-y: auto;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* max-height: 195px; */
+  height: 277.9px;
+  width: inherit;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.table-Co::-webkit-scrollbar {
+  display: none;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+.user-table th {
+  background-color: rgba(0, 208, 194, 0.9);
+  color: white;
+  padding: 8px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.user-table td {
+  padding: 8px 10px;
+}
+
+.user-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.user-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.drag-drop-area {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  border: 2px dashed rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  background: rgba(50, 49, 49, 0.15);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.drag-drop-area:hover {
+  background: rgba(45, 44, 44, 0.25);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-file-input {
+  margin-right: 5.5rem;
+  margin-left: 0px;
+}
+
+.file-label {
+  display: inline-block;
+  padding: 5px 65px;
+  background-color: #e0e0e0;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.file-label:hover {
+  background-color: #d0d0d0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #00d0c2;
+  border-radius: 5px;
+}
+
+/* =================================================== */
+.filter-container {
+  display: flex;
+  align-items: center;
+  margin-left: -5px;
+  width: inherit;
+  margin-bottom: -8px;
+
+  background-color: transparent;
+
+  gap: 0rem;
+}
+
+#departmentFilter {
+  /* padding: 10px 10px; */
+  border-radius: 2px;
+  /* border: 1px solid #ccc; */
+  /* font-size: 10px; */
+  width: fit-content;
+  /* height: 32px; */
+  color: black;
+  background-color: white;
+  /* border: none; */
+  outline: none;
+}

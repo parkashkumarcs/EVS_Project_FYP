@@ -1,0 +1,31 @@
+.form {
+  width: 650px;
+  height: 600px;
+  /* border: 1px solid black; */
+}
+.btns {
+  width: 70%;
+  /* border: 1px solid red; */
+}
+.content {
+  display: flex;
+}
+.nam {
+  margin-top: 180px;
+  margin-left: 70px;
+  font-size: 25px;
+}
+
+.Cms {
+  margin-top: 10px;
+  margin-left: 70px;
+  font-size: 25px;
+}
+.dept {
+  margin-top: 10px;
+  margin-left: 70px;
+  font-size: 25px;
+}
+.check {
+  margin-left: 390px;
+}

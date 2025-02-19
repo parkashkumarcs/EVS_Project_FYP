@@ -1,0 +1,89 @@
+.navbar-container {
+  margin-top: 0px;
+  z-index: 1;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  width: 700px;
+  height: 40px;
+}
+
+.navbar-dashboard {
+  margin-top: 2px;
+  font-size: 35px;
+  margin-left: -29px;
+  margin-right: 0px;
+}
+
+.navbar-user {
+  margin-top: -40px;
+  display: flex;
+  margin-left: 745px;
+  font-size: 22px;
+}
+
+.navbar-username {
+  margin-left: 50px;
+  margin-top: -12px;
+  font-size: 20px;
+}
+
+.navbar-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: -18px;
+}
+
+.navbar-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar-dots {
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navbar-dot {
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.navbar-dropdown-content {
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  min-width: 180px;
+  padding: 8px 0;
+}
+
+.navbar-dropdown-content.navbar-show {
+  display: block;
+}
+
+.navbar-dropdown-content li {
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #333;
+  text-align: left;
+}
+
+.navbar-dropdown-content li:hover {
+  background-color: #f1f1f1;
+}

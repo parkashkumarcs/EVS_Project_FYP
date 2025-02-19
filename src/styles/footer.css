@@ -1,0 +1,41 @@
+/* Scrolling Text Styles */
+.footer p {
+  display: inline-block;
+  white-space: nowrap; /* Prevent text wrapping */
+  animation: scrollText 15s linear infinite; /* Adjust speed for readability */
+  margin: 0;
+  color: #333; /* Softer black for better readability */
+  font-size: 14px; /* Slightly larger for improved visibility */
+  font-family: Arial, sans-serif; /* Ensure consistent font across devices */
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move off-screen to the left */
+  }
+}
+
+/* Footer Container */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fafafa; /* Light background for contrast */
+  text-align: center;
+  padding: 5px 0; /* More padding for better spacing */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000;
+  overflow: hidden; /* Hide overflow for clean edges */
+}
+
+/* Optional for Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer p {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}

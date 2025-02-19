@@ -1,0 +1,155 @@
+.app-container {
+  display: flex;
+}
+
+.side {
+  justify-content: left;
+  padding: 0;
+  margin-left: 40px;
+}
+
+.rmain-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -22px;
+  /* border: 1px solid black; */
+}
+
+.rbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1.96rem;
+  /* border: 2px, solid, black; */
+}
+
+.nav {
+  margin-top: 0px;
+  margin-left: 0.6rem;
+  display: flex;
+  width: 963.5px;
+}
+
+.boxes {
+  margin-left: 9rem;
+}
+
+.ccenter {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: fit-content;
+  margin-top: 0%;
+  gap: 0.5rem;
+  /* border: 2px, solid, rgb(190, 19, 19); */
+}
+
+/* Option Menu */
+/* Options Menu Styles */
+.options-menu {
+  display: inline-block;
+  /* border: 2px, solid, blue; */
+}
+
+.options-menu button {
+  background-color: rgba(0, 208, 194, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+.options-menu ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  width: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.options-menu ul li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.options-menu ul li:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.Rp {
+  font-size: 20px;
+  width: 480px;
+  height: 300px;
+  margin-left: 5px;
+  border-radius: 8px; /* Rounded corners for a smooth look */
+  backdrop-filter: blur(8px); /* Frosted glass effect */
+  background: rgba(255, 255, 255, 0.15); /* Lightly transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Soft border for depth */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Shadow for a slight elevation */
+  padding: 10px 5px; /* Padding for better spacing */
+  color: #080808; /* White text color for readability */
+  text-align: center; /* Center the text */
+}
+
+.rp {
+  display: flex;
+  flex-direction: column;
+  margin-left: -60px;
+  margin-top: 0.2rem;
+  height: 250px;
+  width: 100%;
+  /* border-radius: 10px; */
+  /* border: 1px solid rgba(0, 208, 194, 0.9); */
+}
+
+.dpt {
+  margin-top: 0;
+  margin-left: 8rem;
+}
+
+.preTag {
+  font-size: 20px;
+  margin-left: 6rem;
+}
+
+.dow {
+  font-size: 16px;
+  color: white;
+  margin-left: 0.2rem;
+  border: none;
+  border-radius: 2px;
+  margin-top: -10rem;
+  background-color: rgba(0, 208, 194, 0.9);
+  width: 400px;
+  height: 37px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  /* background-color: rgb(128, 0, 0); */
+  transform: scale(1.05);
+}
+.menu {
+  margin-right: 0px;
+  /* border: 2px, solid, black; */
+  width: fit-content;
+  height: fit-content;
+}

@@ -1,0 +1,139 @@
+.amain-content {
+  height: 100%;
+  width: 100%;
+  margin-top: -22px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: -22px;
+  /* border: 1px solid black; */
+}
+
+.Obox {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-left: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.Onav {
+  width: auto;
+  margin-left: -37px;
+  /* border: 2px, solid, yellow; */
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 5px;
+}
+
+.c1,
+.c2,
+.c3,
+.c4 {
+  display: flex;
+  margin-top: 15px;
+}
+.Ocontent {
+  display: flex;
+  justify-content: center;
+  margin-top: -70px;
+  border-radius: 8px;
+  /* border: 2px solid wheat; */
+  width: fit-content;
+  margin-left: 0.3rem;
+}
+
+.Ocontent form {
+  border-top: 35px solid rgb(0, 208, 194, 0.9);
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 20px;
+  margin-left: 5rem;
+}
+
+input {
+  border-radius: none;
+  margin-top: 0.2rem;
+  margin-left: 4rem;
+  width: 300px;
+  font-size: 15px;
+}
+
+select {
+  font-size: 15px;
+  height: 40px;
+  margin-left: 1.7rem;
+  margin-top: -10px;
+  width: 300px;
+}
+.Op {
+  margin-top: -20px;
+}
+.Opass {
+  /* background-color: rgb(240, 239, 236); */
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  margin-left: 44px;
+  margin-top: -20px;
+}
+.On {
+  margin-top: -15px;
+}
+
+.Oname {
+  /* background-color: rgb(240, 239, 236); */
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  margin-top: -15px;
+  margin-left: 83px;
+}
+.Oem {
+  margin-top: 18px;
+}
+.Oemail {
+  /* background-color: rgb(240, 239, 236); */
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  margin-top: 18px;
+  margin-left: 85px;
+}
+.Add-btn {
+  border: none;
+  background-color: rgb(0, 208, 194, 0.9);
+  color: white;
+  font-size: 25px;
+  border-radius: 2px;
+  height: 40px;
+  width: 300px;
+  margin-left: -29.26rem;
+  margin-top: 212px;
+}
+.Add-btn:hover {
+  cursor: pointer;
+}
+
+/* popup for save button */
+.popup {
+  position: fixed;
+  top: 540px;
+  right: 70px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  z-index: 1000;
+}

@@ -1,0 +1,40 @@
+.cmain-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: -22px;
+  /* border: 1px solid black; */
+}
+
+.cbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-left: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.ctable {
+  display: flex;
+  justify-content: center;
+  margin-top: -70px;
+  border-radius: 10px;
+  margin-left: 22px;
+  /* border: 2px solid wheat; */
+  width: fit-content;
+}
+
+/* popup for register button */
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 1000; /* Ensure it's above other elements */
+}

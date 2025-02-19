@@ -1,0 +1,121 @@
+.about-page {
+  font-family: Arial, sans-serif;
+}
+
+.header-image img {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  margin: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  margin-right: 20px;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.sidebar h2 {
+  font-size: 1.5em;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.print-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #2f2d2d;
+  color: white;
+  font-weight: 800;
+  width: 5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 2;
+  padding: 20px;
+  text-align: justify;
+}
+
+.main-content h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.our-purpose {
+  background-color: #f8f8f8;
+  padding: 15px;
+  margin-top: 20px;
+  border-left: 5px solid #aaa;
+}
+
+.side-image {
+  flex: 1;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.side-image img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.how-we-work {
+  padding: 15px;
+  background-color: #f1f1f1;
+  text-align: justify;
+}
+
+.how-we-work h4 {
+  margin-top: 0;
+}
+
+.how-we-work p {
+  font-size: 1em;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+}
+.sml-links {
+  color: blue;
+}
+.sml-links:hover {
+  cursor: pointer;
+  color: rgb(23, 9, 153);
+  font-weight: 600;
+}
+.sml-links:visited {
+  color: red; /* Color after the link has been visited */
+}
+
+/* here */

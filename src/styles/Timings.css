@@ -1,0 +1,158 @@
+.mainSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+  margin-top: -6.1rem;
+  /* border: 1px solid black; */
+}
+
+.boxesSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1px;
+  margin-left: 1.5rem;
+  /* margin-bottom: 2rem; */
+}
+
+.timingWrapper {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  /* border: 2px, solid, black; */
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  margin-left: 1.57rem;
+  width: fit-content;
+  background-color: rgb(246, 249, 251);
+  /* border: 1px solid rgb(4, 45, 86); */
+  gap: 4.3rem;
+}
+
+.dateSection {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  width: 400px;
+  height: 300px;
+}
+
+.startDateLabel {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.startDateInput {
+  margin-left: 3rem;
+  margin-top: 6px;
+  width: 300px;
+  height: 35px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.endDateLabel {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-left: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.endDateInput {
+  margin-left: 3rem;
+  margin-top: 0px;
+  width: 300px;
+  height: 35px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.timeSection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-left: 40px;
+  width: 400px;
+  height: 300px;
+}
+
+.startTimeLabel {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.startTimeInput {
+  margin-left: 2rem;
+  margin-top: 0px;
+  width: 300px;
+  height: 35px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.endTimeLabel {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.endTimeInput {
+  margin-left: 2rem;
+  margin-top: 10px;
+  width: 300px;
+  height: 35px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.buttonWrapper {
+  /* border: 2px, solid, black; */
+
+  display: flex;
+  justify-content: center;
+}
+
+.saveButton {
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 110px;
+  background-color: rgba(0, 208, 194, 0.9);
+  cursor: pointer;
+  margin-left: 51.6rem;
+}
+
+.saveButton:hover {
+  background-color: rgba(0, 208, 194, 0.9);
+  transition: 0.6s;
+}
+
+/* popup for save button */
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 128, 0, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+}

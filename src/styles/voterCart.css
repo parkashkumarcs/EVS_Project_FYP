@@ -1,0 +1,122 @@
+/* Ensure the page is centered and responsive */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Light background for contrast */
+  font-family: Arial, sans-serif;
+}
+
+/* Card styling */
+.vcard-container {
+  width: 80%; /* Increased width to 80% of the viewport */
+  max-width: 900px; /* Max width for larger screens */
+  min-width: 600px; /* Min width for medium-sized screens */
+  padding: 60px; /* Larger padding for a spacious look */
+  background: linear-gradient(135deg, #ffffff, #e0eafc); /* Gradient background */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Deeper shadow for prominence */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Smooth transition */
+}
+
+/* Add hover effect for the card */
+.vcard-container:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Change gradient on hover */
+}
+
+/* Top section styling for profile + name (left) and logo (right) */
+.vtop-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 40px; /* More space below the top section */
+}
+
+/* Profile circle and name next to each other */
+.vprofile-and-name {
+  display: flex;
+  align-items: center;
+}
+
+.vprofile-circle {
+  width: 100px; /* Smaller profile circle */
+  height: 100px;
+  border-radius: 50%;
+  background-color: #a0a0a0;
+  margin-right: 25px; /* More space between profile and name */
+  transition: transform 0.3s ease; /* Add transition for the profile circle */
+}
+
+.vprofile-circle:hover {
+  transform: scale(1.1); /* Scale up profile circle on hover */
+}
+
+.vname {
+  font-size: 32px; /* Larger name font */
+  font-weight: bold;
+  color: #2b3d4f;
+}
+
+/* Logo styling (right side) */
+.vlogo {
+  width: 120px; /* Larger logo size */
+  height: auto;
+}
+
+/* Info container */
+.vinfo-container {
+  width: 100%;
+  text-align: left; /* Align text to the left */
+}
+
+.vrow {
+  margin-bottom: 25px; /* More spacing between rows */
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Center items vertically */
+  font-size: 22px; /* Larger font size */
+  padding: 0 20px;
+}
+
+.vlabel {
+  font-weight: bold;
+  color: #2b3d4f;
+  width: 200px; /* Fixed width for labels */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .vcard-container {
+    width: 90%; /* Slightly larger width on smaller screens */
+    padding: 50px;
+  }
+
+  .vtop-section {
+    justify-content: space-around;
+  }
+
+  .vlogo {
+    width: 100px; /* Smaller logo for small screens */
+  }
+
+  .vprofile-circle {
+    width: 80px; /* Smaller profile circle for small screens */
+    height: 80px;
+  }
+
+  .vname {
+    font-size: 28px;
+  }
+
+  .vrow {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,489 @@
+body {
+  /* display: flex; */
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: white;
+  height: fit-content;
+  overflow: hidden;
+  /* border: 2px solid black; */
+}
+
+/* Base styles */
+header#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar-logo img {
+  height: 30px;
+  max-width: 100%;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item .navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-item .navbar-link:hover {
+  color: #f0a500;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header#navbar {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-item .navbar-link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  header#navbar {
+    padding: 10px;
+  }
+
+  .navbar-logo img {
+    height: 40px;
+  }
+
+  .navbar-item .navbar-link {
+    font-size: 16px;
+  }
+}
+
+.login-body-div {
+  display: flex;
+  justify-content: center; /* Horizontally centers the child */
+  align-items: center; /* Vertically centers the child */
+  min-height: 100vh; /* Ensures the parent container covers the full viewport height */
+  margin: 0; /* Removes default body margin */
+}
+.main-login-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  text-align: center; /* Optional: Ensures text/content within is centered horizontally */
+  /* margin: 0; */
+  margin-bottom: 70px;
+}
+
+.login-section {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  /* margin-top: 70px; */
+
+  width: 100%;
+  gap: 20px;
+}
+
+.login-image {
+  /* border: 1px solid black; */
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* height: 100%; */
+  width: 500px;
+  /* margin-right: 20px; */
+  /* margin-left: 80px; */
+  /* margin-top: 10px; */
+  margin-bottom: 0px;
+}
+
+@keyframes growIn {
+  0% {
+    opacity: 0; /* Start fully transparent */
+    transform: scale(0); /* Start from a scale of 0 (invisible) */
+  }
+  100% {
+    opacity: 1; /* End fully opaque */
+    transform: scale(1); /* End at normal size */
+  }
+}
+
+.login-img {
+  /* border: 2px solid black; */
+  width: 500px;
+  height: 100%;
+  /* padding: 20px; */
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Blur effect for background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: opacity 0.5s, transform 0.3s; /* Smooth transition for opacity and transform */
+  animation: growIn 0.8s ease-in-out; /* Grow-in animation */
+}
+
+/* Optional: Add hover effect */
+.login-img:hover {
+  opacity: 0.8; /* Slightly reduce opacity on hover */
+  transform: scale(1.02); /* Slightly scale up the element */
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover for depth */
+}
+
+/* from here to */
+.form-wrapper {
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  width: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  border-radius: 12px; /* Slightly rounded corners */
+  margin-left: 0;
+  /* margin-top: 10px; */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px); /* Blur effect for the background */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  opacity: 0; /* Start invisible */
+  transform: scale(0.9); /* Start slightly smaller */
+  animation: fadeInScale 0.5s forwards; /* Animation applied */
+}
+
+@keyframes fadeInScale {
+  to {
+    opacity: 1; /* Fade in */
+    transform: scale(1); /* Scale to original size */
+  }
+}
+
+.form-wrapper:hover {
+  transform: scale(1.05); /* Slightly scale on hover */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* till here */
+
+.togle {
+  width: 17px;
+  margin-top: -20px;
+  margin-left: -146px;
+  height: 17px;
+}
+
+.login-form {
+  margin-top: 0;
+  /* padding: 20px; */
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+  height: 100%;
+}
+
+.login-subtitle {
+  display: block;
+  font-size: 50px;
+  color: rgba(0, 208, 194, 0.9);
+  margin-top: 20px;
+}
+
+.login-title {
+  color: black;
+  margin-top: 20px;
+  color: black;
+  font-size: 50px;
+  margin-left: 115px;
+}
+
+.ll {
+  display: flex;
+  margin-top: -10px;
+}
+.form-group {
+  /* display: flex; */
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+.form-input {
+  width: 19rem;
+  /* padding: 10px; */
+  margin-bottom: 2px;
+  border: none;
+  border-bottom: solid 1px rgb(65, 179, 158);
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size: 17px;
+  margin-left: 40px;
+  padding-left: 1.5rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(65, 179, 158);
+}
+
+.show-password-label {
+  font-size: 16px;
+  /* border: 1px solid black; */
+  display: flex;
+  margin-top: 15px;
+  margin-left: 2px;
+}
+
+.forget-password {
+  font-size: 16px;
+  /* border: 1px solid black; */
+  display: flex;
+  margin-top: -60px;
+  margin-left: 13.6rem;
+}
+
+.forget-password a {
+  color: gray;
+  text-decoration: none;
+}
+
+.login-button {
+  width: 87%;
+  height: 45px;
+  /* background-color: rgb(65, 179, 158); */
+  background-color: rgba(0, 208, 194, 0.9);
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 4px;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+}
+
+.login-button:hover {
+  color: white;
+  background-color: black;
+}
+
+.pop {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  height: fit-content;
+  /* background: rgba(0, 0, 0, 0.5); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 5px;
+  /* margin-top: -180px; */
+  /* margin-left: -70px; */
+
+  opacity: 0;
+  animation: popupAnimation 0.8s forwards; /* Apply animation */
+}
+
+@keyframes popupAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5); /* Start from small size */
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1); /* End at normal size */
+    opacity: 1;
+  }
+}
+
+.pop-content {
+  height: 335px;
+  background: rgba(0, 208, 194, 0.9);
+  padding: 20px;
+  border-radius: 5px;
+  width: 350px;
+  text-align: center;
+}
+
+.input-pop {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button-reset {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 1.1s ease, background-color 0.3s ease; /* Smooth scaling and background color change */
+}
+
+.button-reset:hover {
+  background-color: #45a049;
+  transform: scale(1.01); /* Scale the button to make it grow from the center */
+}
+
+/* here */
+.g-register-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Keyframes for the slow zoom-in animation */
+@keyframes popup-appear {
+  0% {
+    transform: scale(0.7); /* Start smaller */
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    transform: scale(1); /* End at normal size */
+    opacity: 1; /* End fully visible */
+  }
+}
+
+/* Apply the animation to the popup content */
+.g-register-popup-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  animation: popup-appear 0.8s ease forwards; /* Add animation with duration and easing */
+}
+
+.g-register-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.g-register-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.g-form-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.g-input-text,
+.g-input-email,
+.g-input-select,
+.g-calendar-icon {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  width: 100%;
+  margin-left: 0px;
+}
+
+.g-input-text::placeholder,
+.g-input-email::placeholder,
+.g-input-select::placeholder {
+  color: #aaa;
+}
+
+.g-input-address {
+  width: 100%;
+}
+
+.g-calendar-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.g-register-button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+
+  transition: transform 1.1s ease, background-color 0.3s ease; /* Smooth scaling and background color change */
+}
+
+.g-register-button:hover {
+  background-color: #333;
+  transform: scale(1.01); /* Scale the button to make it grow from the center */
+}
+
+.g-close-button {
+  margin-top: 0.7rem;
+  background-color: #f8f5f5;
+  border: 1px, solid gray;
+  /* border: none; */
+  color: black;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 1.1s ease, background-color 0.3s ease; /* Smooth scaling and background color change */
+}
+
+.g-close-button:hover {
+  background-color: #33ba88;
+  color: rgb(247, 245, 245);
+  transform: scale(1.01); /* Scale the button to make it grow from the center */
+}

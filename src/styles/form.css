@@ -1,0 +1,182 @@
+.fo {
+  border-top: 35px solid rgba(46, 215, 175, 0.582);
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 54.84rem;
+  padding-left: 2rem;
+  height: 380px;
+}
+
+label {
+  color: black;
+  display: block;
+}
+
+.lnm {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.lct {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 90px;
+}
+.ct {
+  /* background-color: rgb(240, 239, 236); */
+  border-radius: 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-left: 0;
+  margin-top: 5px;
+  width: 300px;
+}
+.lcm {
+  font-size: 20px;
+  margin-top: -38px;
+  display: flex;
+  flex-direction: column;
+}
+.cm {
+  /* background-color: rgb(240, 239, 236); */
+  border-radius: 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-left: 0;
+  margin-top: 5px;
+  width: 300px;
+}
+.nm {
+  /* background-color: rgb(240, 239, 236); */
+  border-radius: 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-left: 0;
+  margin-top: 5px;
+  width: 300px;
+}
+.lem {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -38px;
+  margin-left: 90px;
+}
+.em {
+  /* background-color: rgb(240, 239, 236); */
+  border-radius: 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-left: 0;
+  margin-top: 5px;
+  width: 300px;
+}
+
+/* Department and Gender styling */
+.ldp {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -30px;
+  margin-left: 80px; /* Aligning with contact */
+}
+
+.dp {
+  /* background-color: rgb(240, 239, 236); */
+  border-radius: 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-left: 0;
+  margin-top: 5px;
+  width: 300px; /* Same width as other fields */
+}
+
+.lgn {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -30px; /* Adjust to align with department */
+  margin-left: 90px; /* Align with department on the same line */
+}
+
+.gn {
+  /* background-color: rgb(240, 239, 236); */
+  border-radius: 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-left: 0px;
+  margin-top: 5px;
+  width: 300px; /* Same width as other fields */
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+input,
+select {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.error {
+  font-size: small;
+  color: red;
+}
+
+.btn1 {
+  border-radius: 5px;
+  background-color: rgba(0, 208, 194, 0.9);
+  color: white;
+  margin-left: -336px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  width: 19.9rem;
+  height: 2.6rem;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn1:hover {
+  transition: 0.5s;
+  background-color: rgba(0, 208, 194, 0.9);
+}
+
+.custom-file-upload {
+  margin-left: 100px;
+  font-size: 22px;
+}
+
+.File-input {
+  width: 20rem;
+  height: 3rem;
+  /* background-color: #ccc; */
+  border-radius: 0px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  margin-left: 250px;
+  margin-top: -50px;
+}

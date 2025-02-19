@@ -1,0 +1,18 @@
+.navbar-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 0.5rem;
+  font-family: "Tomorrow", sans-serif;
+  width: 100%;
+  height: 2.5rem;
+  box-sizing: border-box;
+  background: linear-gradient(
+    to top,
+    #ffffff,
+    #cfe0fc
+  ); /* Light blue gradient from bottom to top */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+  color: black;
+}

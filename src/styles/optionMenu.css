@@ -1,0 +1,55 @@
+.options-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content if needed */
+  width: 390px;
+  height: 300px;
+  margin-left: 25px;
+  border-radius: 12px; /* Rounded corners for a smoother look */
+  backdrop-filter: blur(8px); /* Frosted glass effect */
+  background: rgba(255, 255, 255, 0.15); /* Lightly transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Soft border for depth */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Shadow for a floating effect */
+  padding: 10px;
+  color: #fff; /* White text color for readability */
+}
+
+.dept {
+  margin-top: 0rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 80%;
+}
+.opt {
+  width: 500px;
+}
+
+.center {
+  margin-left: 15rem;
+  margin-top: 5rem;
+}
+
+label {
+  margin-bottom: 2rem;
+  font-size: 25px;
+}
+.options-menu .gen {
+  margin-top: 1rem;
+  margin-left: 4.5rem;
+  border-radius: 30px;
+  background-color: rgb(4, 45, 86);
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  width: 45%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.options-menu .gen:hover {
+  background-color: rgb(128, 0, 0);
+  transform: scale(1.05);
+}

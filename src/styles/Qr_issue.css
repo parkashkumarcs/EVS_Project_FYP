@@ -1,0 +1,122 @@
+.qmain-content {
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
+  /* border: 2px solid black; */
+  margin-left: 2rem;
+}
+
+.Qcontent {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  border-radius: 15px;
+  width: 98%;
+
+  /* Enhanced Glassy Effect */
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15px) brightness(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  /* Animation */
+  animation: fadeInScale 1s ease forwards;
+  opacity: 0; /* Start hidden, will fade in */
+  transform: scale(0.95); /* Initial scale for pop effect */
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.Qcontent:hover {
+  box-shadow: 0 12px 40px rgba(31, 38, 135, 0.5); /* Stronger shadow on hover */
+}
+
+/* Keyframes for the fade-in and scale animation */
+@keyframes fadeInScale {
+  to {
+    opacity: 1; /* Fade in to visible */
+    transform: scale(1); /* Scale up to full size */
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+  margin-left: 20px;
+  margin-top: 40px;
+  height: 300px;
+}
+.pic {
+  display: flex;
+  flex-direction: column;
+
+  width: 480px;
+  margin-left: 20px;
+  margin-top: 40px;
+  height: 320px;
+}
+.pic img {
+  width: 510px;
+  height: 270px;
+}
+.Qcontent p {
+  font-size: 25px;
+  font: bolder;
+  margin-left: 30px;
+}
+
+input {
+  border-radius: 10px;
+  width: 260px;
+  height: 35px;
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: -20px;
+  padding: 3px;
+}
+
+.field button {
+  width: 150px;
+  height: 40px;
+  margin-top: 18px;
+  margin-left: 90px;
+  background-color: rgb(65, 179, 158);
+  border: none;
+  color: white;
+  border-radius: 9px;
+  font-size: 20px;
+}
+
+.field button:hover {
+  background-color: red;
+  transition: 0.6s;
+}
+
+.pic button {
+  width: 150px;
+  height: 40px;
+  margin-top: 0px;
+  margin-left: 190px;
+  background-color: rgb(65, 179, 158);
+  border: none;
+  color: white;
+  border-radius: 9px;
+  font-size: 20px;
+}
+
+.pic button:hover {
+  background-color: red;
+  transition: 0.6s;
+}
+
+.profile-b {
+  /* border: solid 2px black; */
+  margin-top: -80px;
+  margin-left: -140px;
+}
+.Qnav {
+  display: flex;
+  margin-left: 40px;
+}

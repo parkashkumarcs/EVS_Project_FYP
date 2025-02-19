@@ -1,0 +1,95 @@
+.container-boxes {
+  margin-top: 40px;
+  margin-left: 140px;
+
+  display: flex;
+}
+
+.genx {
+  opacity: 0.9;
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 60px;
+  border-radius: 10px;
+  box-shadow: white;
+  border: 1px solid white;
+  background-color: rgba(18, 212, 199, 0.1);
+}
+
+.genx1 {
+  opacity: 0.9;
+  width: 40px;
+  height: 40px;
+  margin-top: -90px;
+  margin-left: 220px;
+  border-radius: 10px;
+  box-shadow: white;
+  border: 1px solid white;
+  background-color: rgba(18, 212, 199, 0.1);
+}
+
+.genx3 {
+  opacity: 0.9;
+  width: 40px;
+  height: 40px;
+  margin-top: -100px;
+  margin-left: 220px;
+  border-radius: 10px;
+  box-shadow: white;
+  border: 1px solid white;
+  background-color: rgba(18, 212, 199, 0.1);
+}
+
+.box-primary {
+  font-size: 10px;
+  margin-top: 40px;
+  margin-left: -140px;
+  display: flex;
+  border-radius: 10px;
+  width: 284px;
+  height: 100px;
+  color: white;
+  background-color: rgb(0, 208, 194, 0.9);
+}
+
+.box-secondary {
+  margin-top: 40px;
+  margin-left: 30px;
+
+  border-radius: 10px;
+  width: 284px;
+  height: 100px;
+  color: white;
+  background-color: rgb(0, 105, 254, 0.9);
+  height: 100px;
+}
+
+.box-third {
+  margin-top: 40px;
+  margin-left: 30px;
+
+  border-radius: 10px;
+  width: 284px;
+  height: 120px;
+  color: white;
+  background-color: rgb(240, 133, 76, 0.9);
+  height: 100px;
+}
+
+.icon-user {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.label-box {
+  margin-top: 5px;
+  margin-left: 62px;
+  font-size: 22px;
+}
+
+.number-box {
+  margin-top: -10px;
+  margin-left: 79px;
+  font-size: 30px;
+}
